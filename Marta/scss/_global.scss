@@ -1,0 +1,22 @@
+.button {
+  text-transform: lowercase;
+  font-size: clamp(0.938rem, 0.872rem + 0.33vw, 1.125rem);/*17px*/
+  padding: 5px clamp(1.25rem, 1.14rem + 0.55vw, 1.563rem);/*5px 25px*/
+  border-radius: 9999px;
+  box-shadow: 1px 1px 4px #3b3b3b;
+  transition: box-shadow 0.3s ease;
+  &:active {
+    box-shadow: none;
+    border: 1px solid #3b3b3b;
+  }
+}
+
+.title {
+  @extend %roboto-400;
+  font-size: clamp(1.875rem, 1.435rem + 2.2vw, 3.125rem);/*50px*/
+  line-height: 1.6;
+}
+
+p {
+  font-size: clamp(0.938rem, 0.894rem + 0.22vw, 1.063rem);/*17px*/
+}
